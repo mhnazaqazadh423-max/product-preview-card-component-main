@@ -1,0 +1,99 @@
+body{
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1px; */
+}
+
+.category {
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.title {
+  color: hsl(212, 21%, 14%);
+  font-size: 28px;
+}
+
+.description {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.price-now {
+  color: hsl(158, 36%, 37%);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.price-old {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.cart-btn {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cart-btn:hover {
+  background-color: hsl(158, 42%, 18%);
+}
+
+
+
+
+.product-img {
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .card {
+    display: flex;
+    max-width: 600px;
+  }
+
+  picture {
+    width: 50%;
+  }
+
+  .product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    width: 50%;
+  }
+}
+
